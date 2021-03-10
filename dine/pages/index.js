@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
+import { GhostButton } from 'components/common/Button';
 import Cta from 'components/homepage/Cta';
-import { Button, GhostButton } from 'components/common/Button';
+import FeatureSlider from 'components/homepage/FeatureSlider';
 
 const Home = () => (
   <div>
@@ -98,43 +99,7 @@ const Home = () => (
         </ul>
       </div>
 
-      <div>
-        <div>
-          <img src="./images/homepage/family-gathering-mobile.jpg" />
-          <h3>Family Gathering</h3>
-          <p>
-            We love catering for entire families. So please bring everyone along
-            for a special meal with your loved ones. We’ll provide a memorable
-            experience for all.
-          </p>
-        </div>
-        <div>
-          <img src="./images/homepage/special-events-mobile.jpg" />
-          <h3>Special Events</h3>
-          <p>
-            Whether it’s a romantic dinner or special date you’re celebrating
-            with others we’ll look after you. We’ll be sure to mark your special
-            date with an unforgettable meal.
-          </p>
-        </div>
-        <div>
-          <img src="./images/homepage/social-events-mobile.jpg" />
-          <h3>Social Events</h3>
-          <p>
-            Are you looking to have a larger social event? No problem! We’re
-            more than happy to cater for big parties. We’ll work with you to
-            make your event a hit with everyone.
-          </p>
-        </div>
-        <Link href="/booking">
-          <Button>Book a table</Button>
-        </Link>
-        <ul>
-          <li>Family Gathering</li>
-          <li>Special Events</li>
-          <li>Social Events</li>
-        </ul>
-      </div>
+      <FeatureSlider />
       <Cta />
     </main>
   </div>
