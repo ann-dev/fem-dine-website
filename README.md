@@ -1,6 +1,6 @@
 # Frontend Mentor - Dine Website Challenge
 
-![Design preview for the Dine Website Challenge coding challenge](./designs/preview.jpg)
+![Design preview for the Dine Website Challenge coding challenge](./preview.jpg)
 
 ## Welcome! 👋
 
