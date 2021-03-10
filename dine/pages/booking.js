@@ -1,7 +1,13 @@
+import Head from 'next/head';
 import Link from 'next/link';
 
 const Booking = () => (
   <div>
+    <Head>
+      <title>Booking | Frontend Mentor | Dine Website</title>
+      <link rel="icon" href="/favicon-32x32.png" />
+    </Head>
+
     <header
       style={{
         backgroundColor: 'black',

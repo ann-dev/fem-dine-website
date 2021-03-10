@@ -15,7 +15,7 @@ export const ContactDetails = styled.div`
 
 export const ContactItem = styled.p`
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 2px;
   line-height: 28px;
   text-transform: uppercase;
