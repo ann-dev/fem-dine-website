@@ -7,8 +7,8 @@ export const HighlightsWrapper = styled.div`
   padding: 72px 0 50px;
 `;
 
-export const SectionDivider = styled.img`
-  width: 71px;
+export const MenuItemsWrapper = styled.div`
+  padding: 32px 0 10px;
 `;
 
 export const ItemDivider = styled.div`
@@ -17,11 +17,4 @@ export const ItemDivider = styled.div`
   margin: 25px 0;
   opacity: 30%;
   width: 100%;
-`;
-
-export const HighlightsDescription = styled.p`
-  font-size: 15px;
-  letter-spacing: -0.19px;
-  line-height: 25px;
-  margin-bottom: 64px;
 `;

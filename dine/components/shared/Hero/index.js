@@ -1,11 +1,10 @@
 import Link from 'next/link';
 
-import { HeroWrapper, HeroParagraph } from './styles';
-
 import { HeroContainer } from 'components/common/Container';
 import DineLogo from 'components/common/DineLogo';
-import { HeroHeading } from 'components/common/Heading';
+import Article from 'components/common/Article';
 import { GhostButton } from 'components/common/Button';
+import { HeroWrapper } from './styles';
 
 const Hero = ({
   heading,
@@ -21,8 +20,7 @@ const Hero = ({
   >
     <HeroContainer bookingHero={bookingHero}>
       <DineLogo />
-      <HeroHeading>{heading}</HeroHeading>
-      <HeroParagraph>{leading}</HeroParagraph>
+      <Article hero title={heading} paragraph={leading} />
       <Link href="/booking">
         <GhostButton>{buttonText}</GhostButton>
       </Link>

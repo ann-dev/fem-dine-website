@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-const DineLogo = ({ style }) => (
-  <div style={style}>
+const DineLogo = () => (
+  <div>
     <Link href="/">
       <img src="./logo.svg" alt="dine logo" />
     </Link>

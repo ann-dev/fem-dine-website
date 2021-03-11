@@ -6,7 +6,7 @@ export const SliderWrapper = styled.div`
   padding: 80px 0 124px;
 `;
 
-export const Slide = styled.div``;
+export const Slider = styled.div``;
 
 export const SlideImage = styled.div`
   margin: 0 auto;
@@ -48,9 +48,6 @@ export const ControlItem = styled.li`
   &:hover::after {
     opacity: 100%;
   }
-`;
-
-export const SlideText = styled.div`
 `;
 
 export const SlideDescription = styled.p`
