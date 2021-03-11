@@ -4,9 +4,8 @@ import { COLORS } from 'constants/COLORS';
 export const FooterWrapper = styled.footer`
   background-color: ${COLORS.codGray};
   color: white;
-  padding: 80px 24px;
+  padding: 80px 0;
   text-align: center;
-  width: 100%;
 `;
 
 export const ContactDetails = styled.div`

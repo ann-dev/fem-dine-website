@@ -3,16 +3,16 @@ import { COLORS } from 'constants/COLORS';
 
 export const SliderWrapper = styled.div`
   color: ${COLORS.codGray};
-  padding: 80px 24px 124px;
-  position: relative;
+  padding: 80px 0 124px;
   text-align: center;
 `;
 
 export const Slide = styled.div``;
 
 export const SlideImage = styled.div`
+  margin: 0 auto;
   object-fit: cover;
-  width: 100%auto;
+  width: 327px;
   img {
     width: 100%;
   }
@@ -52,18 +52,11 @@ export const ControlItem = styled.li`
 `;
 
 export const SlideText = styled.div`
-  margin-top: 30px;
-`;
-
-export const SlideHeading = styled.span`
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.4px;
 `;
 
 export const SlideDescription = styled.p`
-    font-size: 15px;
-    letter-spacing: -0.19px;
-    line-height: 25px;
-    margin: 16px 0 32px;
-`
+  font-size: 15px;
+  letter-spacing: -0.19px;
+  line-height: 25px;
+  margin: 16px 0 32px;
+`;

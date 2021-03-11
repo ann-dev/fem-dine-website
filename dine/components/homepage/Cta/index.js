@@ -1,19 +1,18 @@
 import Link from 'next/link';
 
+import Container from 'components/common/Container';
 import { GhostButton } from 'components/common/Button';
-import { CtaWrapper, CtaHeading } from './styles';
+import { Heading } from 'components/common/Heading';
+import { CtaWrapper } from './styles';
 
 const Cta = () => (
-  <CtaWrapper
-    style={{
-      backgroundImage: "url('./images/homepage/ready-bg-mobile.jpg')",
-      backgroundRepeat: 'no-repeat'
-    }}
-  >
-    <CtaHeading>Ready to make a reservation?</CtaHeading>
-    <Link href="/booking">
-      <GhostButton ghost>Book a table</GhostButton>
-    </Link>
+  <CtaWrapper>
+    <Container>
+      <Heading>Ready to make a reservation?</Heading>
+      <Link href="/booking">
+        <GhostButton ghost>Book a table</GhostButton>
+      </Link>
+    </Container>
   </CtaWrapper>
 );
 

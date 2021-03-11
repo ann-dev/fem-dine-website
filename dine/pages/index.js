@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { GhostButton } from 'components/common/Button';
 import Cta from 'components/homepage/Cta';
 import FeatureSlider from 'components/homepage/FeatureSlider';
+import MenuHighlights from 'components/homepage/MenuHighlights';
 
 const Home = () => (
   <div>
@@ -58,47 +59,7 @@ const Home = () => (
         </p>
       </div>
 
-      <div
-        style={{
-          backgroundColor: 'black',
-          color: 'white',
-          paddingBottom: '50px',
-          paddingTop: '80px'
-        }}
-      >
-        <h3>A few highlights from our menu</h3>
-        <p>
-          We cater for all dietary requirements, but here’s a glimpse at some of
-          our diner’s favourites. Our menu is revamped every season.
-        </p>
-        <ul>
-          <li>
-            <img src="./images/homepage/salmon-mobile.jpg" />
-            <h3>Seared Salmon</h3>
-            <p>
-              Fillet Our locally sourced salmon served with a refreshing
-              buckwheat summer salad.
-            </p>
-          </li>
-          <li>
-            <img src="./images/homepage/beef-mobile.jpg" />
-            <h3>Rosemary Filet Mignon</h3>
-            <p>
-              Our prime beef served to your taste with a delicious choice of
-              seasonal sides.
-            </p>
-          </li>
-          <li>
-            <img src="./images/homepage/chocolate-mobile.jpg" />
-            <h3>Summer Fruit Chocolate Mousse</h3>
-            <p>
-              Creamy mousse combined with summer fruits and dark chocolate
-              shavings.
-            </p>
-          </li>
-        </ul>
-      </div>
-
+      <MenuHighlights />
       <FeatureSlider />
       <Cta />
     </main>
