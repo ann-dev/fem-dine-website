@@ -1,5 +1,5 @@
 import MenuItem from './MenuItem';
-import Container from 'components/common/Container';
+import { Container } from 'components/common/Container';
 import { Heading } from 'components/common/Heading';
 
 import {

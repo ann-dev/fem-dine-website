@@ -1,5 +1,5 @@
-import DineLogo from 'components/shared/DineLogo';
-import Container from 'components/common/Container'
+import DineLogo from 'components/common/DineLogo';
+import { Container } from 'components/common/Container';
 
 import {
   FooterWrapper,

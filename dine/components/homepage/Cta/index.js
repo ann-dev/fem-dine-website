@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import Container from 'components/common/Container';
+import { Container } from 'components/common/Container';
 import { GhostButton } from 'components/common/Button';
 import { Heading } from 'components/common/Heading';
 import { CtaWrapper } from './styles';

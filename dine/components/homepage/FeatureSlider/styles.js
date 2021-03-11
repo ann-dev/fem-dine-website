@@ -4,7 +4,6 @@ import { COLORS } from 'constants/COLORS';
 export const SliderWrapper = styled.div`
   color: ${COLORS.codGray};
   padding: 80px 0 124px;
-  text-align: center;
 `;
 
 export const Slide = styled.div``;

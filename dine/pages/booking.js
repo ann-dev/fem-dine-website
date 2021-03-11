@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import Link from 'next/link';
+
+import Hero from 'components/shared/Hero';
 
 const Booking = () => (
   <div>
@@ -8,7 +9,7 @@ const Booking = () => (
       <link rel="icon" href="/favicon-32x32.png" />
     </Head>
 
-    <header
+    {/* <header
       style={{
         backgroundColor: 'black',
         color: 'white',
@@ -28,7 +29,18 @@ const Booking = () => (
         accommodate you.
       </p>
       <a style={{ border: '1px solid white' }}>Reserve a place</a>
-    </header>
+    </header> */}
+
+    <Hero
+      fullImage
+      bookingHero
+      imagePath="/images/booking/hero-bg-mobile.jpg"
+      heading="Reservations"
+      leading=" We can’t wait to host you. If you have any special requirements please
+      feel free to call on the phone number below. We’ll be happy to
+      accommodate you."
+      buttonText="Reserve place"
+    />
 
     <div>
       <form>

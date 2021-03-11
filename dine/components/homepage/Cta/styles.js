@@ -7,6 +7,5 @@ export const CtaWrapper = styled.div`
   background-size: cover;
   color: white;
   padding: 80px 0;
-  text-align: center;
   width: 100%;
 `;

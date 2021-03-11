@@ -14,3 +14,7 @@ export const SmallHeading = styled(Heading)`
     font-size: 18px;
     margin: 20px 0 0;
 `
+
+export const HeroHeading = styled(Heading)`
+  font-weight: 300;
+`

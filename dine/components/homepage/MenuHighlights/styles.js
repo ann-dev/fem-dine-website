@@ -5,7 +5,6 @@ export const HighlightsWrapper = styled.div`
   background-color: ${COLORS.codGray};
   color: white;
   padding: 72px 0 50px;
-  text-align: center;
 `;
 
 export const SectionDivider = styled.img`

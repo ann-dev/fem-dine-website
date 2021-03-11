@@ -5,7 +5,6 @@ export const FooterWrapper = styled.footer`
   background-color: ${COLORS.codGray};
   color: white;
   padding: 80px 0;
-  text-align: center;
 `;
 
 export const ContactDetails = styled.div`

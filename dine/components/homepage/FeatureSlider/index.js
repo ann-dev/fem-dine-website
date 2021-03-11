@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { Button } from 'components/common/Button';
 import { Heading } from 'components/common/Heading';
-import Container from 'components/common/Container';
+import { Container } from 'components/common/Container';
 
 import {
   SliderWrapper,
