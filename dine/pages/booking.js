@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import Hero from 'components/shared/Hero';
+import BookingForm from 'components/booking/BookingForm';
 
 const Booking = () => (
   <div>
@@ -19,34 +20,7 @@ const Booking = () => (
       accommodate you."
       buttonText="Reserve place"
     />
-    <div>
-      <form>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <div>
-          <span>Pick a date</span>
-          <input type="number" placeholder="MM" />
-          <input type="number" placeholder="DD" />
-          <input type="number" placeholder="YYYY" />
-        </div>
-        <div>
-          <span>Pick a time</span>
-          <input type="number" placeholder="09" />
-          <input type="number" placeholder="00" />
-          <input type="number" placeholder="YYYY" />
-          <select>
-            <option value="am">AM</option>
-            <option value="pm">PM</option>
-          </select>
-        </div>
-        <div>
-          <button>-</button>
-          <span>4 people</span>
-          <button>+</button>
-        </div>
-        <button>Make reservation</button>
-      </form>
-    </div>
+    <BookingForm />
   </div>
 );
 

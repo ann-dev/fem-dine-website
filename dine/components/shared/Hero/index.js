@@ -19,7 +19,7 @@ const Hero = ({
     style={{ backgroundImage: `url(${imagePath})` }}
   >
     <HeroContainer bookingHero={bookingHero}>
-      <DineLogo />
+      <DineLogo style={{ width: 82 }}/>
       <Article hero title={heading} paragraph={leading} />
       <Link href="/booking">
         <GhostButton>{buttonText}</GhostButton>

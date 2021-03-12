@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-const DineLogo = () => (
-  <div>
+const DineLogo = ({ style }) => (
+  <div style={{ cursor: 'pointer' }}>
     <Link href="/">
-      <img src="./logo.svg" alt="dine logo" />
+      <img style={style} src="./logo.svg" alt="dine logo" />
     </Link>
   </div>
 );

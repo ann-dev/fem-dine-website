@@ -32,6 +32,7 @@ export const Attribution = styled.div`
 
 export const AttributionItem = styled.p`
     font-size: 13px;
+    margin-bottom: 5px;
     a {
         text-decoration: underline;
     }

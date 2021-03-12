@@ -1,9 +1,10 @@
 import Footer from 'components/shared/Footer';
-import '../styles/globals.css';
+import GlobalStyle from './_globalStyles';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <GlobalStyle />
       <Component {...pageProps} />
       <Footer />
     </>
