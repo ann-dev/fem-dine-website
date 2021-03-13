@@ -11,7 +11,7 @@ export const Form = styled.form`
   font-size: 18px;
   height: auto;
   left: calc((100vw - 327px) / 2);
-  padding: 6px 32px 32px 32px;
+  padding: 32px;
   position: absolute;
   text-align: center;
   top: -130px;
@@ -19,7 +19,6 @@ export const Form = styled.form`
 `;
 
 export const FormRowWrapper = styled.div`
-  margin: 32px 0;
   text-align: left;
 `;
 
@@ -31,16 +30,19 @@ export const InputLabel = styled.span`
 export const FormInputRow = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 73px) 88px;
-  grid-template-rows: 45px;
   grid-column-gap: 14px;
-  grid-row-gap: 0px;
+`;
+
+export const InputWrapper = styled.div`
+  border-bottom: 1px solid black;
+  height: auto;
+  margin-bottom: 32px;
 `;
 
 export const FormInput = styled.input`
   -webkit-appearance: none;
   -moz-appearance: textfield;
   border: none;
-  border-bottom: 1px solid black;
   font-family: inherit;
   font-size: 18px;
   height: 45px;
@@ -53,6 +55,7 @@ export const FormInput = styled.input`
 
 export const FormSelect = styled.div`
   border-bottom: 1px solid black;
+  height: 46px;
   padding-left: 18px;
   padding-bottom: 16px;
   position: relative;

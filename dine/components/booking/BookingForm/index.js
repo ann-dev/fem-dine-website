@@ -6,6 +6,7 @@ import {
   FormInputRow,
   FormRowWrapper,
   InputLabel,
+  InputWrapper,
   FormInput,
   FormSelect,
   GuestCounter,
@@ -16,22 +17,36 @@ const BookingForm = () => (
   <FormContainer>
     <Form>
       <FormRowWrapper>
-        <FormInput type="text" placeholder="Name" />
+        <InputWrapper>
+          <FormInput type="text" placeholder="Name" />
+        </InputWrapper>
       </FormRowWrapper>
-      <FormInput type="email" placeholder="Email" />
+      <InputWrapper>
+        <FormInput type="email" placeholder="Email" />
+      </InputWrapper>
       <FormRowWrapper>
         <InputLabel>Pick a date</InputLabel>
         <FormInputRow>
-          <FormInput type="number" placeholder="MM" />
-          <FormInput type="number" placeholder="DD" />
-          <FormInput type="number" placeholder="YYYY" />
+          <InputWrapper>
+            <FormInput type="number" placeholder="MM" />
+          </InputWrapper>
+          <InputWrapper>
+            <FormInput type="number" placeholder="DD" />
+          </InputWrapper>
+          <InputWrapper>
+            <FormInput type="number" placeholder="YYYY" />
+          </InputWrapper>
         </FormInputRow>
       </FormRowWrapper>
       <FormRowWrapper>
         <InputLabel>Pick a time</InputLabel>
         <FormInputRow>
-          <FormInput type="number" placeholder="09" />
+          <InputWrapper>
+            <FormInput type="number" placeholder="09" />
+          </InputWrapper>
+          <InputWrapper>
           <FormInput type="number" placeholder="00" />
+          </InputWrapper>
           <FormSelect>
             <select>
               <option value="am">AM</option>
