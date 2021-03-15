@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Hero from 'components/shared/Hero';
+import HomeHero from 'components/homepage/HomeHero';
 import FeaturedSection from 'components/homepage/FeaturedSection';
 import MenuHighlights from 'components/homepage/MenuHighlights';
 import FeatureSlider from 'components/homepage/EventSlider';
@@ -13,10 +13,8 @@ const Home = () => (
       <link rel="icon" href="/favicon-32x32.png" />
     </Head>
 
-    <Hero
+    <HomeHero
       imagePath="/images/homepage/hero-bg-mobile.jpg"
-      heading="Exquisite dining since 1989"
-      leading="Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse."
       buttonText="Book a table"
     />
     <FeaturedSection />

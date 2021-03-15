@@ -13,7 +13,7 @@ import {
 const Footer = () => (
   <FooterWrapper>
     <Container>
-      <DineLogo style={{ marginBottom: 8 }} />
+      <DineLogo />
       <ContactDetails>
         <ContactItem>
           Marthwaite, Sedbergh

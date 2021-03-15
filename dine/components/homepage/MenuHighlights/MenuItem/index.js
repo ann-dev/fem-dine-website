@@ -1,14 +1,24 @@
-import { ItemImage, ItemDescription } from './styles';
 import { SmallHeading } from 'components/common/Heading';
 
+import {
+  ItemWrapper,
+  ItemImage,
+  ImageDecorator,
+  ItemTextWrapper,
+  ItemDescription
+} from './styles';
+
 const MenuItem = ({ imagePath, title, description }) => (
-  <div>
+  <ItemWrapper>
     <ItemImage>
       <img src={imagePath} alt="" role="presentation" />
     </ItemImage>
-    <SmallHeading>{title}</SmallHeading>
-    <ItemDescription>{description}</ItemDescription>
-  </div>
+    <ImageDecorator />
+    <ItemTextWrapper>
+      <SmallHeading>{title}</SmallHeading>
+      <ItemDescription>{description}</ItemDescription>
+    </ItemTextWrapper>
+  </ItemWrapper>
 );
 
 export default MenuItem;

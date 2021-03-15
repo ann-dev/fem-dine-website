@@ -6,6 +6,7 @@ import Article from 'components/common/Article';
 import { GhostButton } from 'components/common/Button';
 import { HeroWrapper } from './styles';
 
+// TODO: remove this component alltogether
 const Hero = ({
   heading,
   fullImage,
@@ -19,7 +20,7 @@ const Hero = ({
     style={{ backgroundImage: `url(${imagePath})` }}
   >
     <HeroContainer bookingHero={bookingHero}>
-      <DineLogo style={{ width: 82 }}/>
+      <DineLogo />
       <Article hero title={heading} paragraph={leading} />
       <Link href="/booking">
         <GhostButton>{buttonText}</GhostButton>

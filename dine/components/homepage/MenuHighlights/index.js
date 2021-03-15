@@ -2,17 +2,20 @@ import MenuItem from './MenuItem';
 import { Container } from 'components/common/Container';
 import Article from 'components/common/Article';
 
-import { HighlightsWrapper, MenuItemsWrapper, ItemDivider } from './styles';
+import { HighlightsWrapper, MenuItemsWrapper, ArticleWrapper, ItemDivider } from './styles';
 
 const MenuHighlights = () => (
   <HighlightsWrapper>
     <Container>
-      <Article
-        divider
-        title="A few highlights from our menu"
-        paragraph="We cater for all dietary requirements, but here’s a glimpse at some of
+      <ArticleWrapper>
+        <Article
+          divider
+          title="A few highlights from our menu"
+          paragraph="We cater for all dietary requirements, but here’s a glimpse at some of
           our diner’s favourites. Our menu is revamped every season."
-      />
+        />
+      </ArticleWrapper>
+
       <MenuItemsWrapper>
         <MenuItem
           imagePath="./images/homepage/salmon-mobile.jpg"

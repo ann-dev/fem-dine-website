@@ -1,9 +1,20 @@
 import Link from 'next/link';
+import styled from 'styled-components';
 
-const DineLogo = ({ style }) => (
-  <div style={{ cursor: 'pointer' }}>
+import { DEVICES } from 'constants/DEVICES';
+
+const DineImage = styled.img`
+  cursor: pointer;
+  width: 82px;
+  @media ${DEVICES.tablet} {
+    width: 103px;
+  }
+`;
+
+const DineLogo = () => (
+  <div>
     <Link href="/">
-      <img style={style} src="./logo.svg" alt="dine logo" />
+      <DineImage src="./logo.svg" alt="dine logo" />
     </Link>
   </div>
 );

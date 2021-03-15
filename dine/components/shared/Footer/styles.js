@@ -8,7 +8,7 @@ export const FooterWrapper = styled.footer`
 `;
 
 export const ContactDetails = styled.div`
-  margin-top: 32px;
+  margin-top: 38px;
 `;
 
 export const ContactItem = styled.p`

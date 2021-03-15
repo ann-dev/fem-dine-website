@@ -41,8 +41,10 @@ export const InputWrapper = styled.div`
 
 export const FormInput = styled.input`
   -webkit-appearance: none;
+  -webkit-border-radius: 0px;
   -moz-appearance: textfield;
   border: none;
+  border-radius: 0px;
   font-family: inherit;
   font-size: 18px;
   height: 45px;
