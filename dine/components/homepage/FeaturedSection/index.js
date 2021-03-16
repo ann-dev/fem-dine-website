@@ -1,4 +1,5 @@
 import { Container } from 'components/common/Container';
+import ResponsivePicture from 'components/common/ResponsivePicture';
 import Article from 'components/common/Article';
 
 import {
@@ -10,7 +11,7 @@ import {
   FeaturedTextWrapper,
   ImageAnchor,
   PatternAnchor,
-  PatternWrapper,
+  PatternWrapper
 } from './styles';
 
 const FeaturedSection = () => (
@@ -31,10 +32,7 @@ const FeaturedSection = () => (
       <FeaturedItem>
         <ImageAnchor>
           <FeaturedImageWrapper absolute>
-            <img
-              src="/images/homepage/enjoyable-place-mobile.jpg"
-              alt="rural village landscape"
-            />
+            <ResponsivePicture path="/images/homepage/enjoyable-place" alt="" />
           </FeaturedImageWrapper>
         </ImageAnchor>
         <FeaturedTextWrapper>
@@ -48,17 +46,13 @@ const FeaturedSection = () => (
       </FeaturedItem>
       <FeaturedItem>
         <FeaturedImageWrapper>
-          <img
-            src="/images/homepage/locally-sourced-mobile.jpg"
-            alt=""
-            role="presentation"
-          />
+          <ResponsivePicture path="/images/homepage/locally-sourced" alt="" />
         </FeaturedImageWrapper>
-          <PatternWrapper
-            src="/images/patterns/pattern-lines.svg"
-            alt=""
-            role="presentation"
-          />
+        <PatternWrapper
+          src="/images/patterns/pattern-lines.svg"
+          alt=""
+          role="presentation"
+        />
         <FeaturedTextWrapper>
           <Article
             divider

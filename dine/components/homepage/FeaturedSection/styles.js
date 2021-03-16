@@ -33,6 +33,7 @@ export const LeftPatternBg = styled.img`
 export const PatternAnchor = styled.div`
   bottom: 0;
   display: none;
+  overflow: hidden;
   position: absolute;
   left: calc(100vw / 2);
   width: 50vw;
@@ -59,7 +60,7 @@ export const FeaturedImageWrapper = styled.div`
   top: -70px;
   width: 327px;
   img {
-    width: 100%;
+    height: 100%;
   }
   @media ${DEVICES.tablet} {
     height: 360px;

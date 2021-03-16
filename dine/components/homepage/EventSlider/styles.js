@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+
 import { COLORS } from 'constants/COLORS';
+import { DEVICES } from 'constants/DEVICES';
 
 export const SliderWrapper = styled.div`
   color: ${COLORS.codGray};
   padding: 80px 0 124px;
+  @media ${DEVICES.tablet} {
+    padding: 120px 0 124px;
+  }
 `;
 
 export const Slider = styled.div``;
@@ -11,7 +16,12 @@ export const Slider = styled.div``;
 export const SlideImage = styled.div`
   margin: 0 auto;
   object-fit: cover;
+  overflow: hidden;
   width: 327px;
+  @media ${DEVICES.tablet} {
+    height: 360px;
+    width: 573px;
+  }
   img {
     width: 100%;
   }
@@ -31,6 +41,9 @@ export const ControlItem = styled.li`
   letter-spacing: 2px;
   opacity: 50%;
   text-transform: uppercase;
+  @media ${DEVICES.tablet} {
+    display: inline-block;
+  }
   &::after {
     background-color: ${COLORS.beaver};
     bottom: 0;
