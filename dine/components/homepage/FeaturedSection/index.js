@@ -1,16 +1,34 @@
 import { Container } from 'components/common/Container';
 import Article from 'components/common/Article';
+
 import {
   FeaturedWrapper,
+  LeftPatternBg,
+  RightPatternBg,
+  FeaturedItem,
   FeaturedImageWrapper,
   FeaturedTextWrapper,
-  ImageAnchor
+  ImageAnchor,
+  PatternAnchor,
+  PatternWrapper,
 } from './styles';
 
 const FeaturedSection = () => (
   <FeaturedWrapper>
+    <LeftPatternBg
+      src="/images/patterns/pattern-curve-top-right.svg"
+      alt=""
+      role="presentation"
+    />
+    <PatternAnchor>
+      <RightPatternBg
+        src="/images/patterns/pattern-curve-top-left.svg"
+        alt=""
+        role="presentation"
+      />
+    </PatternAnchor>
     <Container>
-      <div>
+      <FeaturedItem>
         <ImageAnchor>
           <FeaturedImageWrapper absolute>
             <img
@@ -27,11 +45,20 @@ const FeaturedSection = () => (
           everyone. We can even arrange a tour of the farm before your meal."
           />
         </FeaturedTextWrapper>
-      </div>
-      <div>
+      </FeaturedItem>
+      <FeaturedItem>
         <FeaturedImageWrapper>
-          <img src="/images/homepage/locally-sourced-mobile.jpg" />
+          <img
+            src="/images/homepage/locally-sourced-mobile.jpg"
+            alt=""
+            role="presentation"
+          />
         </FeaturedImageWrapper>
+          <PatternWrapper
+            src="/images/patterns/pattern-lines.svg"
+            alt=""
+            role="presentation"
+          />
         <FeaturedTextWrapper>
           <Article
             divider
@@ -41,7 +68,7 @@ const FeaturedSection = () => (
         food."
           />
         </FeaturedTextWrapper>
-      </div>
+      </FeaturedItem>
     </Container>
   </FeaturedWrapper>
 );

@@ -3,6 +3,10 @@ import { DEVICES } from 'constants/DEVICES';
 
 export const FeaturedWrapper = styled.div`
   padding: 0 0 48px;
+  position: relative;
+  @media ${DEVICES.tablet} {
+    padding-bottom: 88px;
+  }
 `;
 
 export const ImageAnchor = styled.div`
@@ -15,6 +19,35 @@ export const ImageAnchor = styled.div`
     width: 573px;
   }
 `;
+
+export const LeftPatternBg = styled.img`
+  display: none;
+  position: absolute;
+  right: calc(100vw / 2 + 5px);
+  top: 105px;
+  @media ${DEVICES.tablet} {
+    display: block;
+  }
+`;
+
+export const PatternAnchor = styled.div`
+  bottom: 0;
+  display: none;
+  position: absolute;
+  left: calc(100vw / 2);
+  width: 50vw;
+  @media ${DEVICES.tablet} {
+    display: block;
+  }
+`;
+
+export const RightPatternBg = styled.img`
+  height: 325px;
+`;
+
+export const FeaturedItem = styled.div`
+  position: relative;
+`
 
 export const FeaturedImageWrapper = styled.div`
   height: 400px;
@@ -33,6 +66,16 @@ export const FeaturedImageWrapper = styled.div`
     margin-top: ${(props) => (props.absolute ? 0 : '120px')};
     top: -90px;
     width: 573px;
+  }
+`;
+
+export const PatternWrapper = styled.img`
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 228px;
+  @media ${DEVICES.tablet} {
+    display: block;
   }
 `;
 

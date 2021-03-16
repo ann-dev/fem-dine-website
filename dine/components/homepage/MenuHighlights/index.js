@@ -1,8 +1,13 @@
-import MenuItem from './MenuItem';
 import { Container } from 'components/common/Container';
 import Article from 'components/common/Article';
+import MenuItem from './MenuItem';
 
-import { HighlightsWrapper, MenuItemsWrapper, ArticleWrapper, ItemDivider } from './styles';
+import {
+  HighlightsWrapper,
+  MenuItemsWrapper,
+  ArticleWrapper,
+  ItemDivider
+} from './styles';
 
 const MenuHighlights = () => (
   <HighlightsWrapper>
