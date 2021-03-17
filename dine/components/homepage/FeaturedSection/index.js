@@ -32,7 +32,7 @@ const FeaturedSection = () => (
       <FeaturedItem>
         <ImageAnchor>
           <FeaturedImageWrapper absolute>
-            <ResponsivePicture path="/images/homepage/enjoyable-place" alt="" />
+            <ResponsivePicture path="/images/homepage/enjoyable-place" alt="" tablet />
           </FeaturedImageWrapper>
         </ImageAnchor>
         <FeaturedTextWrapper>
@@ -46,7 +46,7 @@ const FeaturedSection = () => (
       </FeaturedItem>
       <FeaturedItem>
         <FeaturedImageWrapper>
-          <ResponsivePicture path="/images/homepage/locally-sourced" alt="" />
+          <ResponsivePicture path="/images/homepage/locally-sourced" alt="" tablet />
         </FeaturedImageWrapper>
         <PatternWrapper
           src="/images/patterns/pattern-lines.svg"

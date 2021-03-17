@@ -23,21 +23,21 @@ const MenuHighlights = () => (
 
       <MenuItemsWrapper>
         <MenuItem
-          imagePath="./images/homepage/salmon-mobile.jpg"
+          imagePath="images/homepage/salmon"
           title="Seared Salmon Fillet"
           description="Our locally sourced salmon served with a refreshing buckwheat
       summer salad."
         />
         <ItemDivider />
         <MenuItem
-          imagePath="./images/homepage/beef-mobile.jpg"
+          imagePath="images/homepage/beef"
           title="Rosemary Filet Mignon"
           description="Our prime beef served to your taste with a delicious choice of
       seasonal sides."
         />
         <ItemDivider />
         <MenuItem
-          imagePath="./images/homepage/chocolate-mobile.jpg"
+          imagePath="images/homepage/chocolate"
           title="Summer Fruit Chocolate Mousse"
           description="Creamy mousse combined with summer fruits and dark chocolate shavings."
         />

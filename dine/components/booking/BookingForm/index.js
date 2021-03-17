@@ -45,7 +45,7 @@ const BookingForm = () => (
             <FormInput type="number" placeholder="09" />
           </InputWrapper>
           <InputWrapper>
-          <FormInput type="number" placeholder="00" />
+            <FormInput type="number" placeholder="00" />
           </InputWrapper>
           <FormSelect>
             <select>

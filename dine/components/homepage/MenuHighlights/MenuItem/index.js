@@ -1,4 +1,5 @@
 import { SmallHeading } from 'components/common/Heading';
+import ResponsiveImage from 'components/common/ResponsivePicture';
 
 import {
   ItemWrapper,
@@ -11,7 +12,7 @@ import {
 const MenuItem = ({ imagePath, title, description }) => (
   <ItemWrapper>
     <ItemImage>
-      <img src={imagePath} alt="" role="presentation" />
+      <ResponsiveImage path={imagePath} alt="" role="presentation" />
     </ItemImage>
     <ImageDecorator />
     <ItemTextWrapper>

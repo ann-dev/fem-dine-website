@@ -6,13 +6,18 @@ import DineLogo from 'components/common/DineLogo';
 import ResponsivePicture from 'components/common/ResponsivePicture';
 import Article from 'components/common/Article';
 
-import { HomeHeroWrapper, HomeTextWrapper, HomeBgImage, HomeContentWrapper } from './styles';
+import {
+  HomeHeroWrapper,
+  HomeTextWrapper,
+  HomeBgImage,
+  HomeContentWrapper
+} from './styles';
 
 const HomeHero = () => (
   <HomeHeroWrapper>
     <HeroContainer style={{ position: 'relative' }}>
       <HomeBgImage>
-        <ResponsivePicture path="images/homepage/hero-bg" alt="" />
+        <ResponsivePicture path="images/homepage/hero-bg" alt="" tablet />
       </HomeBgImage>
       <HomeContentWrapper>
         <DineLogo />

@@ -27,13 +27,13 @@ export const FooterDivider = styled.div`
 `;
 
 export const Attribution = styled.div`
-    margin-top: 25px;
-`
+  margin-top: 25px;
+`;
 
 export const AttributionItem = styled.p`
-    font-size: 13px;
-    margin-bottom: 5px;
-    a {
-        text-decoration: underline;
-    }
-`
+  font-size: 13px;
+  margin-bottom: 5px;
+  a {
+    text-decoration: underline;
+  }
+`;

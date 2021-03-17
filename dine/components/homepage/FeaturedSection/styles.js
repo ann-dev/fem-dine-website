@@ -48,7 +48,7 @@ export const RightPatternBg = styled.img`
 
 export const FeaturedItem = styled.div`
   position: relative;
-`
+`;
 
 export const FeaturedImageWrapper = styled.div`
   height: 400px;
