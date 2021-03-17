@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
+import Container from 'components/common/Container';
 import Article from 'components/common/Article';
 import { Button } from 'components/common/Button';
-import { Container } from 'components/common/Container';
 import ResponsivePicture from 'components/common/ResponsivePicture';
 
 import {

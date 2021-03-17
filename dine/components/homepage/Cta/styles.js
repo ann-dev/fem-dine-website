@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 import { DEVICES } from 'constants/DEVICES';
-import { Container } from 'components/common/Container';
+import { Heading } from 'components/common/Heading';
+import Container from 'components/common/Container';
 
 export const CtaWrapper = styled.div`
   color: white;
@@ -17,7 +18,14 @@ export const CtaWrapper = styled.div`
 export const BgImageWrapper = styled.div`
   height: 100%;
   position: absolute;
-  top: 0;
+  top: 1px;
+`;
+
+export const CtaHeading = styled(Heading)`
+  margin-top: 0;
+  @media ${DEVICES.tablet} {
+    max-width: 100%;
+  }
 `;
 
 export const CtaContainer = styled(Container)`

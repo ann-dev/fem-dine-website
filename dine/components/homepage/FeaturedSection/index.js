@@ -1,4 +1,4 @@
-import { Container } from 'components/common/Container';
+import Container from 'components/common/Container';
 import ResponsivePicture from 'components/common/ResponsivePicture';
 import Article from 'components/common/Article';
 

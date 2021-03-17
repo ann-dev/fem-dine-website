@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import { HeroContainer } from 'components/common/Container';
 import { GhostButton } from 'components/common/Button';
 import DineLogo from 'components/common/DineLogo';
 import ResponsivePicture from 'components/common/ResponsivePicture';
@@ -8,6 +7,7 @@ import Article from 'components/common/Article';
 
 import {
   HomeHeroWrapper,
+  HomeHeroContainer,
   HomeTextWrapper,
   HomeBgImage,
   HomeContentWrapper
@@ -15,7 +15,7 @@ import {
 
 const HomeHero = () => (
   <HomeHeroWrapper>
-    <HeroContainer style={{ position: 'relative' }}>
+    <HomeHeroContainer style={{ position: 'relative' }}>
       <HomeBgImage>
         <ResponsivePicture path="images/homepage/hero-bg" alt="" tablet />
       </HomeBgImage>
@@ -33,7 +33,7 @@ const HomeHero = () => (
           <GhostButton>Book a table</GhostButton>
         </Link>
       </HomeContentWrapper>
-    </HeroContainer>
+    </HomeHeroContainer>
   </HomeHeroWrapper>
 );
 

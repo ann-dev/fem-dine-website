@@ -1,4 +1,4 @@
-import { Container } from 'components/common/Container';
+import Container from 'components/common/Container';
 import Article from 'components/common/Article';
 import MenuItem from './MenuItem';
 

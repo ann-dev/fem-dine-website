@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Hero from 'components/shared/Hero';
+// import Hero from 'components/shared/Hero';
 import BookingForm from 'components/booking/BookingForm';
 
 const Booking = () => (
@@ -10,7 +10,7 @@ const Booking = () => (
       <link rel="icon" href="/favicon-32x32.png" />
     </Head>
 
-    <Hero
+    {/* <Hero
       fullImage
       bookingHero
       imagePath="/images/booking/hero-bg-mobile.jpg"
@@ -19,7 +19,7 @@ const Booking = () => (
       feel free to call on the phone number below. We’ll be happy to
       accommodate you."
       buttonText="Reserve place"
-    />
+    /> */}
     <BookingForm />
   </div>
 );

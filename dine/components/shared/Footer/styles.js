@@ -1,14 +1,36 @@
 import styled from 'styled-components';
+
 import { COLORS } from 'constants/COLORS';
+import { DEVICES } from 'constants/DEVICES';
+import Container from 'components/common/Container';
 
 export const FooterWrapper = styled.footer`
   background-color: ${COLORS.codGray};
   color: white;
   padding: 80px 0;
+  @media ${DEVICES.tablet} {
+    padding: 64px 0;
+  }
+`;
+
+export const FooterContainer = styled(Container)`
+  @media ${DEVICES.tablet} {
+    display: flex;
+  }
+`;
+
+export const FooterContentWrapper = styled.div`
+  @media ${DEVICES.tablet} {
+    margin-left: 130px;
+    text-align: left;
+  }
 `;
 
 export const ContactDetails = styled.div`
   margin-top: 38px;
+  @media ${DEVICES.tablet} {
+    margin-top: 0;
+  }
 `;
 
 export const ContactItem = styled.p`
@@ -24,6 +46,9 @@ export const FooterDivider = styled.div`
   height: 1px;
   margin: 40px auto;
   width: 40px;
+  @media ${DEVICES.tablet} {
+    margin: 40px 0;
+  }
 `;
 
 export const Attribution = styled.div`
@@ -32,7 +57,7 @@ export const Attribution = styled.div`
 
 export const AttributionItem = styled.p`
   font-size: 13px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   a {
     text-decoration: underline;
   }

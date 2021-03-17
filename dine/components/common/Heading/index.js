@@ -25,13 +25,6 @@ export const SmallHeading = styled(Heading)`
   }
 `;
 
-export const CtaHeading = styled(Heading)`
-  margin-top: 0;
-  @media ${DEVICES.tablet} {
-    max-width: 100%;
-  }
-`;
-
 export const HeroHeading = styled(Heading)`
   font-weight: 300;
   @media ${DEVICES.tablet} {

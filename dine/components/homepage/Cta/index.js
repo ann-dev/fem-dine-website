@@ -1,9 +1,8 @@
 import Link from 'next/link';
 
 import { GhostButton } from 'components/common/Button';
-import { CtaHeading } from 'components/common/Heading';
 import ResponsivePicture from 'components/common/ResponsivePicture';
-import { CtaWrapper, BgImageWrapper, CtaContainer } from './styles';
+import { CtaWrapper, BgImageWrapper, CtaHeading, CtaContainer } from './styles';
 
 const Cta = () => (
   <CtaWrapper>
