@@ -16,11 +16,9 @@ import {
 const BookingForm = () => (
   <FormContainer>
     <Form>
-      <FormRowWrapper>
-        <InputWrapper>
-          <FormInput type="text" placeholder="Name" />
-        </InputWrapper>
-      </FormRowWrapper>
+      <InputWrapper>
+        <FormInput type="text" placeholder="Name" />
+      </InputWrapper>
       <InputWrapper>
         <FormInput type="email" placeholder="Email" />
       </InputWrapper>

@@ -11,10 +11,10 @@ export const HomeHeroWrapper = styled.div`
 `;
 
 export const HomeHeroContainer = styled(Container)`
-  padding: ${(props) => (props.bookingHero ? '56px 0 228px' : '232px 0 152px')};
+  padding: 232px 0 152px;
+  position: relative;
   @media ${DEVICES.tablet} {
-    padding: ${(props) =>
-      props.bookingHero ? '56px 0 270px' : '374px 0 216px'};
+    padding: 374px 0 216px;
   }
 `;
 

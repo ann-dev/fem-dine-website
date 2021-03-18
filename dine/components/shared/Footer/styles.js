@@ -39,6 +39,9 @@ export const ContactItem = styled.p`
   letter-spacing: 2px;
   line-height: 28px;
   text-transform: uppercase;
+  @media ${DEVICES.tablet} {
+    margin-bottom: 32px;
+  }
 `;
 
 export const FooterDivider = styled.div`
@@ -47,7 +50,7 @@ export const FooterDivider = styled.div`
   margin: 40px auto;
   width: 40px;
   @media ${DEVICES.tablet} {
-    margin: 40px 0;
+    margin: 0 0 36px;
   }
 `;
 

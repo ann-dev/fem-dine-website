@@ -13,10 +13,7 @@ const Home = () => (
       <link rel="icon" href="/favicon-32x32.png" />
     </Head>
 
-    <HomeHero
-      imagePath="/images/homepage/hero-bg-mobile.jpg"
-      buttonText="Book a table"
-    />
+    <HomeHero />
     <FeaturedSection />
     <MenuHighlights />
     <FeatureSlider />

@@ -15,7 +15,7 @@ import {
 
 const HomeHero = () => (
   <HomeHeroWrapper>
-    <HomeHeroContainer style={{ position: 'relative' }}>
+    <HomeHeroContainer>
       <HomeBgImage>
         <ResponsivePicture path="images/homepage/hero-bg" alt="" tablet />
       </HomeBgImage>
