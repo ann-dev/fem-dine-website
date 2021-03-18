@@ -18,7 +18,7 @@ const HomeHero = () => (
   <HomeHeroWrapper>
     <DesktopFullBg>
       <source
-        srcSet="images/homepage/hero-bg-desktop@2x.jpg 2560px"
+        srcSet="images/homepage/hero-bg-desktop@2x.jpg 2560w"
         media="(min-width: 2560px)"
       />
       <img

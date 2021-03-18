@@ -11,6 +11,9 @@ const Container = styled.div`
   @media ${DEVICES.laptopL} {
     max-width: 1110px;
   }
+  @media ${DEVICES.desktopL} {
+    max-width: 1400px;
+  }
 `;
 
 export default Container;
