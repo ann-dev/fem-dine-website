@@ -7,8 +7,8 @@ import Container from 'components/common/Container';
 export const HomeHeroWrapper = styled.div`
   background-color: ${COLORS.codGray};
   color: white;
-  position: relative;
   overflow: hidden;
+  position: relative;
   @media ${DEVICES.laptopL} {
     max-height: 820px;
   }
@@ -41,8 +41,8 @@ export const HomeBgImage = styled.div`
     z-index: 0;
     @media ${DEVICES.tablet} {
       left: -10%;
-      width: 120%;
       top: -5px;
+      width: 120%;
     }
     @media ${DEVICES.laptopL} {
       display: none;

@@ -61,15 +61,15 @@ export const InputWrapper = styled.div`
 
 export const FormInput = styled.input`
   -webkit-appearance: none;
-  -webkit-border-radius: 0px;
+  -webkit-border-radius: 0;
   -moz-appearance: textfield;
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   font-family: inherit;
   font-size: 18px;
   height: 45px;
-  outline: none;
   letter-spacing: -0.22px;
+  outline: none;
   padding-bottom: 16px;
   padding-left: 18px;
   width: 100%;
@@ -78,8 +78,8 @@ export const FormInput = styled.input`
 export const FormSelect = styled.div`
   border-bottom: 1px solid black;
   height: 46px;
-  padding-left: 18px;
   padding-bottom: 16px;
+  padding-left: 18px;
   position: relative;
   &::after {
     content: url(/icons/icon-arrow.svg);

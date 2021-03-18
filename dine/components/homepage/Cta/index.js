@@ -12,7 +12,7 @@ const Cta = () => (
     <CtaContainer>
       <CtaHeading>Ready to make a reservation?</CtaHeading>
       <Link href="/booking">
-        <GhostButton ghost>Book a table</GhostButton>
+        <GhostButton no_margin>Book a table</GhostButton>
       </Link>
     </CtaContainer>
   </CtaWrapper>

@@ -22,6 +22,9 @@ export const BgImageWrapper = styled.div`
   height: 100%;
   position: absolute;
   top: 1px;
+  @media ${DEVICES.laptopL} {
+    top: 10px;
+  }
 `;
 
 export const CtaHeading = styled(Heading)`
@@ -41,8 +44,5 @@ export const CtaContainer = styled(Container)`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    button {
-      margin-right: 0;
-    }
   }
 `;

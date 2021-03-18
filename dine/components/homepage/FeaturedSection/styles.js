@@ -33,9 +33,9 @@ export const LeftPatternBg = styled.img`
 export const PatternAnchor = styled.div`
   bottom: 0;
   display: none;
+  left: calc(100vw / 2);
   overflow: hidden;
   position: absolute;
-  left: calc(100vw / 2);
   width: 50vw;
   @media ${DEVICES.tablet} {
     display: block;

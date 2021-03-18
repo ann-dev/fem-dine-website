@@ -14,6 +14,9 @@ export const Heading = styled.span`
     line-height: 56px;
     max-width: 400px;
   }
+  @media ${DEVICES.laptopL} {
+    margin-left: 0;
+  }
 `;
 
 export const SmallHeading = styled(Heading)`

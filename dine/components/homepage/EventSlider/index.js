@@ -35,26 +35,26 @@ const FeatureSlider = () => (
           <ResponsivePicture
             path="images/homepage/family-gathering"
             alt=""
-            tablet
           />
         </SlideImage>
         <SlideImageBlur />
-        <SlideControls>
-          <ControlItem>Family Gathering</ControlItem>
-          <ControlItem>Special Events</ControlItem>
-          <ControlItem>Social Events</ControlItem>
-        </SlideControls>
-        <SlideTextWrapper>
-          <Article
-            title="Family Gathering"
-            paragraph="We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all."
-          />
-        </SlideTextWrapper>
+        <div>
+          <SlideControls>
+            <ControlItem>Family Gathering</ControlItem>
+            <ControlItem>Special Events</ControlItem>
+            <ControlItem>Social Events</ControlItem>
+          </SlideControls>
+          <SlideTextWrapper>
+            <Article
+              title="Family Gathering"
+              paragraph="We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all."
+            />
+          </SlideTextWrapper>
+          <Link href="/booking">
+            <Button no_margin>Book a table</Button>
+          </Link>
+        </div>
       </Slider>
-
-      <Link href="/booking">
-        <Button>Book a table</Button>
-      </Link>
     </Container>
   </SliderWrapper>
 );

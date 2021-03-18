@@ -9,7 +9,7 @@ export const Button = styled.button`
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
-  margin: 0 auto;
+  margin: ${(props) => (props.no_margin ? 0 : '0 auto')};
   padding: 24px 0 22px;
   text-transform: uppercase;
   width: 245px;

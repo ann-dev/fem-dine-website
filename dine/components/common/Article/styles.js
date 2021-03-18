@@ -13,7 +13,7 @@ export const ArticleParagraph = styled.p`
     margin: 0 auto 32px;
   }
   @media ${DEVICES.laptopL} {
-    max-width: 445px;
     margin: 0 0 42px 0;
+    max-width: 445px;
   }
 `;
