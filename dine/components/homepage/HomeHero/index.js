@@ -10,11 +10,23 @@ import {
   HomeHeroContainer,
   HomeTextWrapper,
   HomeBgImage,
-  HomeContentWrapper
+  HomeContentWrapper,
+  DesktopFullBg
 } from './styles';
 
 const HomeHero = () => (
   <HomeHeroWrapper>
+    <DesktopFullBg>
+      <source
+        srcSet="images/homepage/hero-bg-desktop@2x.jpg 2560px"
+        media="(min-width: 2560px)"
+      />
+      <img
+        src="images/homepage/hero-bg-desktop.jpg"
+        alt=""
+        role="presentation"
+      />
+    </DesktopFullBg>
     <HomeHeroContainer>
       <HomeBgImage>
         <ResponsivePicture path="images/homepage/hero-bg" alt="" tablet />

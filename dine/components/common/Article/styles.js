@@ -12,4 +12,8 @@ export const ArticleParagraph = styled.p`
     line-height: 30px;
     margin: 0 auto 32px;
   }
+  @media ${DEVICES.laptopL} {
+    max-width: 445px;
+    margin: 0 0 42px 0;
+  }
 `;

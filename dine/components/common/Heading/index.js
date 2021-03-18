@@ -33,4 +33,11 @@ export const HeroHeading = styled(Heading)`
     line-height: 64px;
     max-width: 385px;
   }
+  @media ${DEVICES.laptopL} {
+    font-size: 64px;
+    letter-spacing: -0.8px;
+    line-height: 72px;
+    margin: 153px 0 28px;
+    max-width: 525px;
+  }
 `;

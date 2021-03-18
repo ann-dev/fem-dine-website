@@ -7,7 +7,11 @@ import Container from 'components/common/Container';
 export const HomeHeroWrapper = styled.div`
   background-color: ${COLORS.codGray};
   color: white;
+  position: relative;
   overflow: hidden;
+  @media ${DEVICES.laptopL} {
+    max-height: 820px;
+  }
 `;
 
 export const HomeHeroContainer = styled(Container)`
@@ -15,6 +19,10 @@ export const HomeHeroContainer = styled(Container)`
   position: relative;
   @media ${DEVICES.tablet} {
     padding: 374px 0 216px;
+  }
+  @media ${DEVICES.laptopL} {
+    padding: 65px 0 198px;
+    text-align: left;
   }
 `;
 
@@ -36,6 +44,19 @@ export const HomeBgImage = styled.div`
       width: 120%;
       top: -5px;
     }
+    @media ${DEVICES.laptopL} {
+      display: none;
+    }
+  }
+`;
+
+export const DesktopFullBg = styled.picture`
+  display: none;
+  height: 820px;
+  position: absolute;
+  right: 0;
+  @media ${DEVICES.laptopL} {
+    display: block;
   }
 `;
 
@@ -43,5 +64,8 @@ export const HomeTextWrapper = styled.div`
   margin: 0 auto;
   @media ${DEVICES.tablet} {
     max-width: 575px;
+  }
+  @media ${DEVICES.laptopL} {
+    margin: 0;
   }
 `;
