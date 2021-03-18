@@ -13,6 +13,9 @@ export const CtaWrapper = styled.div`
   @media ${DEVICES.tablet} {
     padding: 64px 0;
   }
+  @media ${DEVICES.laptopL} {
+    padding: 92px 0;
+  }
 `;
 
 export const BgImageWrapper = styled.div`
@@ -26,9 +29,20 @@ export const CtaHeading = styled(Heading)`
   @media ${DEVICES.tablet} {
     max-width: 100%;
   }
+  @media ${DEVICES.laptopL} {
+    margin: 0;
+  }
 `;
 
 export const CtaContainer = styled(Container)`
   position: relative;
   z-index: 1;
+  @media ${DEVICES.laptopL} {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    button {
+      margin-right: 0;
+    }
+  }
 `;
