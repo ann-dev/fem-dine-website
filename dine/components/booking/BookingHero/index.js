@@ -16,7 +16,7 @@ import {
 const BookingHero = () => (
   <BookingHeroWrapper>
     <BookingBgImage>
-      <ResponsivePicture path="images/booking/hero-bg" alt="" tablet />
+      <ResponsivePicture path="/images/booking/hero-bg" alt="" tablet desktop />
     </BookingBgImage>
     <BookingHeroContainer style={{ position: 'relative' }}>
       <BookingContentWrapper>

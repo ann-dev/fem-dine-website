@@ -4,8 +4,36 @@ import { DEVICES } from 'constants/DEVICES';
 export const FormContainer = styled.div`
   height: 534px;
   position: relative;
+  margin: 0 auto;
+  width: 327px;
   @media ${DEVICES.tablet} {
     height: 435px;
+    width: 540px;
+  }
+  @media ${DEVICES.laptopL} {
+    height: 320px;
+  }
+`;
+
+export const FormPattern = styled.img`
+  display: none;
+  left: 220px;
+  position: absolute;
+  top: 185px;
+  @media ${DEVICES.laptopL} {
+    display: block;
+  }
+`;
+
+export const FormBgPattern = styled.img`
+  display: none;
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
+  position: absolute;
+  right: -20px;
+  width: 993px;
+  z-index: -1;
+  @media ${DEVICES.laptopL} {
+    display: block;
   }
 `;
 
@@ -14,19 +42,23 @@ export const Form = styled.form`
   box-shadow: 0 75px 100px -50px rgba(56, 66, 85, 50.32%);
   font-size: 18px;
   height: auto;
-  left: calc((100vw - 327px) / 2);
+  left: 0;
   padding: 32px;
   position: absolute;
   text-align: center;
   top: -130px;
   width: 327px;
   @media ${DEVICES.tablet} {
-    left: calc((100vw - 540px) / 2);
+    left: 0;
     padding: 48px;
     top: -250px;
     width: 540px;
     button {
       width: 100%;
+    }
+    @media ${DEVICES.laptopL} {
+      left: 300px;
+      top: -345px;
     }
   }
 `;
@@ -34,6 +66,7 @@ export const Form = styled.form`
 export const FormRowWrapper = styled.div`
   text-align: left;
   @media ${DEVICES.tablet} {
+    align-items: center;
     display: flex;
     justify-content: space-between;
   }
@@ -42,6 +75,9 @@ export const FormRowWrapper = styled.div`
 export const InputLabel = styled.span`
   display: block;
   margin-bottom: 12px;
+  @media ${DEVICES.tablet} {
+    margin-top: -20px;
+  }
 `;
 
 export const FormInputRow = styled.div`

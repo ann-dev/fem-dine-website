@@ -3,6 +3,8 @@ import { Button } from 'components/common/Button';
 import {
   FormContainer,
   Form,
+  FormPattern,
+  FormBgPattern,
   FormInputRow,
   FormRowWrapper,
   InputLabel,
@@ -15,6 +17,16 @@ import {
 
 const BookingForm = () => (
   <FormContainer>
+    <FormPattern
+      src="/images/patterns/pattern-lines.svg"
+      alt=""
+      role="presentation"
+    />
+    <FormBgPattern
+      src="/images/patterns/pattern-curve-bottom-right.svg"
+      alt=""
+      role="presentation"
+    />
     <Form>
       <InputWrapper>
         <FormInput type="text" placeholder="Name" />

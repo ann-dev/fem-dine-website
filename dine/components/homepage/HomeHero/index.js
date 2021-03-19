@@ -18,18 +18,18 @@ const HomeHero = () => (
   <HomeHeroWrapper>
     <DesktopFullBg>
       <source
-        srcSet="images/homepage/hero-bg-desktop@2x.jpg 2560w"
+        srcSet="/images/homepage/hero-bg-desktop@2x.jpg 2560w"
         media="(min-width: 2560px)"
       />
       <img
-        src="images/homepage/hero-bg-desktop.jpg"
+        src="/images/homepage/hero-bg-desktop.jpg"
         alt=""
         role="presentation"
       />
     </DesktopFullBg>
     <HomeHeroContainer>
       <HomeBgImage>
-        <ResponsivePicture path="images/homepage/hero-bg" alt="" tablet />
+        <ResponsivePicture path="/images/homepage/hero-bg" alt="" tablet />
       </HomeBgImage>
       <HomeContentWrapper>
         <DineLogo />

@@ -7,7 +7,7 @@ import { CtaWrapper, BgImageWrapper, CtaHeading, CtaContainer } from './styles';
 const Cta = () => (
   <CtaWrapper>
     <BgImageWrapper>
-      <ResponsivePicture path="images/homepage/ready-bg" tablet desktop />
+      <ResponsivePicture path="/images/homepage/ready-bg" tablet desktop />
     </BgImageWrapper>
     <CtaContainer>
       <CtaHeading>Ready to make a reservation?</CtaHeading>

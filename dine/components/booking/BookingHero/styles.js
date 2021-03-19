@@ -12,16 +12,18 @@ export const BookingHeroWrapper = styled.div`
 `;
 
 export const BookingBgImage = styled.div`
+  object-fit: cover;
   img {
-    height: auto;
     left: 0;
     position: absolute;
     top: 0;
-    width: 100%;
     z-index: 0;
     @media ${DEVICES.tablet} {
       left: -10%;
       width: 120%;
+    }
+    @media ${DEVICES.tablet} {
+      left: 0;
     }
   }
 `;
@@ -36,6 +38,9 @@ export const BookingHeroContainer = styled(Container)`
       display: none;
     }
   }
+  @media ${DEVICES.laptopL} {
+    padding: 65px 0 84px;
+  }
 `;
 
 export const BookingContentWrapper = styled.div`
@@ -49,5 +54,9 @@ export const BookingTextWrapper = styled.div`
     margin-top: 64px;
     max-width: 575px;
     text-align: center;
+  }
+  @media ${DEVICES.laptopL} {
+    text-align: left;
+    margin: 0;
   }
 `;

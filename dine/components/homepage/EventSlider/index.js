@@ -32,7 +32,7 @@ const FeatureSlider = () => (
           role="presentation"
         />
         <SlideImage>
-          <ResponsivePicture path="images/homepage/family-gathering" alt="" />
+          <ResponsivePicture path="/images/homepage/family-gathering" alt="" />
         </SlideImage>
         <SlideImageBlur />
         <div>
