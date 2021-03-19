@@ -14,16 +14,17 @@ export const CtaWrapper = styled.div`
     padding: 64px 0;
   }
   @media ${DEVICES.laptopL} {
-    padding: 92px 0;
+    padding: 86px 0;
   }
 `;
 
 export const BgImageWrapper = styled.div`
   height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 1px;
   @media ${DEVICES.laptopL} {
-    top: 10px;
+    top: 0;
   }
 `;
 
@@ -34,6 +35,7 @@ export const CtaHeading = styled(Heading)`
   }
   @media ${DEVICES.laptopL} {
     margin: 0;
+    margin-top: 5px;
   }
 `;
 

@@ -1,9 +1,9 @@
-import Container from 'components/common/Container';
 import Article from 'components/common/Article';
 import MenuItem from './MenuItem';
 
 import {
   HighlightsWrapper,
+  HighlightsContainer,
   MenuItemsWrapper,
   ArticleWrapper,
   ItemDivider
@@ -11,7 +11,7 @@ import {
 
 const MenuHighlights = () => (
   <HighlightsWrapper>
-    <Container>
+    <HighlightsContainer>
       <ArticleWrapper>
         <Article
           divider
@@ -20,7 +20,6 @@ const MenuHighlights = () => (
           our diner’s favourites. Our menu is revamped every season."
         />
       </ArticleWrapper>
-
       <MenuItemsWrapper>
         <MenuItem
           imagePath="images/homepage/salmon"
@@ -42,7 +41,7 @@ const MenuHighlights = () => (
           description="Creamy mousse combined with summer fruits and dark chocolate shavings."
         />
       </MenuItemsWrapper>
-    </Container>
+    </HighlightsContainer>
   </HighlightsWrapper>
 );
 

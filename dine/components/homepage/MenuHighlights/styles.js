@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import { COLORS } from 'constants/COLORS';
 import { DEVICES } from 'constants/DEVICES';
+import Container from 'components/common/Container';
 
 export const HighlightsWrapper = styled.div`
   background-color: ${COLORS.codGray};
@@ -9,6 +10,25 @@ export const HighlightsWrapper = styled.div`
   padding: 72px 0 50px;
   @media ${DEVICES.tablet} {
     padding: 96px 0;
+  }
+  @media ${DEVICES.laptopL} {
+    padding: 200px 0 120px;
+  }
+`;
+
+export const HighlightsContainer = styled(Container)`
+  @media ${DEVICES.laptopL} {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+`
+
+export const ArticleWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 445px;
+  @media ${DEVICES.laptopL} {
+    margin-left: 0;
   }
 `;
 
@@ -18,11 +38,10 @@ export const MenuItemsWrapper = styled.div`
     margin: 0 auto;
     max-width: 573px;
   }
-`;
-
-export const ArticleWrapper = styled.div`
-  margin: 0 auto;
-  max-width: 445px;
+  @media ${DEVICES.laptopL} {
+    margin-right: 0;
+    padding-right: 0;
+  }
 `;
 
 export const ItemDivider = styled.div`
