@@ -23,7 +23,7 @@ export const HighlightsContainer = styled(Container)`
     justify-content: space-between;
     text-align: left;
   }
-`
+`;
 
 export const ArticleWrapper = styled.div`
   margin: 0 auto;
@@ -41,6 +41,7 @@ export const MenuItemsWrapper = styled.div`
   }
   @media ${DEVICES.laptopL} {
     margin-right: 0;
+    padding-left: 32.5px;
     padding-right: 0;
   }
 `;

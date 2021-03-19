@@ -30,6 +30,7 @@ export const ImageAnchor = styled.div`
 
 export const LeftPatternBg = styled.img`
   display: none;
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
   position: absolute;
   right: calc(100vw / 2 + 5px);
   top: 105px;
@@ -61,6 +62,7 @@ export const PatternAnchor = styled.div`
 
 export const RightPatternBg = styled.img`
   height: 325px;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
 `;
 
 export const FeaturedItem = styled.div`

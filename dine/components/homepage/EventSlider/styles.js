@@ -17,6 +17,7 @@ export const SliderWrapper = styled.div`
 
 export const BgLeftPattern = styled.img`
   display: none;
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
   position: absolute;
   right: calc(100vw / 2);
   top: 0;

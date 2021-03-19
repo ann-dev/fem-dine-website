@@ -51,4 +51,7 @@ export const ItemDescription = styled.p`
   @media ${DEVICES.tablet} {
     margin: 0;
   }
+  @media ${DEVICES.laptopL} {
+    max-width: 100%;
+  }
 `;
