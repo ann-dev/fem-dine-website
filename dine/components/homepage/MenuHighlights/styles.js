@@ -12,6 +12,7 @@ export const HighlightsWrapper = styled.div`
     padding: 96px 0;
   }
   @media ${DEVICES.laptopL} {
+    margin-top: -80px;
     padding: 200px 0 120px;
   }
 `;
