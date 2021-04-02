@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Heading, HeroHeading } from 'components/common/Heading';
 import { ArticleParagraph } from './styles';
 
@@ -16,5 +18,19 @@ const Article = ({ title, paragraph, hero, divider }) => (
     <ArticleParagraph>{paragraph}</ArticleParagraph>
   </>
 );
+
+Article.defaultProps = {
+  title: 'Default title',
+  paragraph: 'Some text...',
+  hero: false,
+  divider: false
+};
+
+Article.propTypes = {
+  title: PropTypes.string,
+  paragraph: PropTypes.string,
+  hero: PropTypes.bool,
+  divider: PropTypes.bool
+};
 
 export default Article;

@@ -1,12 +1,20 @@
+import PropTypes from 'prop-types';
+
 const ResponsivePicture = ({ path, alt, tablet, desktop }) => (
   <picture>
     {desktop ? (
-      <source srcSet={`${path}-desktop@2x.jpg 2560w`} media="(min-width: 2560px)" />
+      <source
+        srcSet={`${path}-desktop@2x.jpg 2560w`}
+        media="(min-width: 2560px)"
+      />
     ) : (
       ''
     )}
     {desktop ? (
-      <source srcSet={`${path}-desktop.jpg 1440w`} media="(min-width: 1440px)" />
+      <source
+        srcSet={`${path}-desktop.jpg 1440w`}
+        media="(min-width: 1440px)"
+      />
     ) : (
       ''
     )}
@@ -31,5 +39,12 @@ const ResponsivePicture = ({ path, alt, tablet, desktop }) => (
     />
   </picture>
 );
+
+ResponsivePicture.propTypes = {
+  path: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+  tablet: PropTypes.bool,
+  desktop: PropTypes.bool
+};
 
 export default ResponsivePicture;

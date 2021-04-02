@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { SmallHeading } from 'components/common/Heading';
 import ResponsiveImage from 'components/common/ResponsivePicture';
 
@@ -21,5 +23,17 @@ const MenuItem = ({ imagePath, title, description }) => (
     </ItemTextWrapper>
   </ItemWrapper>
 );
+
+MenuItem.propTypes = {
+  imagePath: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+};
+
+MenuItem.defaultProps = {
+  imagePath: '',
+  title: 'Item title',
+  description: 'Description',
+};
 
 export default MenuItem;
