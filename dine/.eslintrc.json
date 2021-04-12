@@ -4,8 +4,6 @@
   "parserOptions": {
     "requireConfigFile": false,
     "sourceType": "module",
-    "babelOptions": {
-      "presets": ["next/babel"]
-    }
+    "babelOptions": {}
   }
 }
