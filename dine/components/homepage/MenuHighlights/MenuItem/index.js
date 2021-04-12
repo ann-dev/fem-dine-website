@@ -27,13 +27,13 @@ const MenuItem = ({ imagePath, title, description }) => (
 MenuItem.propTypes = {
   imagePath: PropTypes.string,
   title: PropTypes.string,
-  description: PropTypes.string,
+  description: PropTypes.string
 };
 
 MenuItem.defaultProps = {
   imagePath: '',
   title: 'Item title',
-  description: 'Description',
+  description: 'Description'
 };
 
 export default MenuItem;
