@@ -7,25 +7,17 @@ import Container from 'components/common/Container';
 export const BookingHeroWrapper = styled.div`
   background-color: ${COLORS.codGray};
   color: white;
+  height: 600px;
   overflow: hidden;
   position: relative;
+  width: 100vw;
 `;
 
 export const BookingBgImage = styled.div`
+  height: auto;
   object-fit: cover;
-  img {
-    left: 0;
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    @media ${DEVICES.tablet} {
-      left: -10%;
-      width: 120%;
-    }
-    @media ${DEVICES.tablet} {
-      left: 0;
-    }
-  }
+  position: absolute;
+  width: 100%;
 `;
 
 export const BookingHeroContainer = styled(Container)`
