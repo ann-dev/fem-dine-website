@@ -41,7 +41,8 @@ export const ContactDetailsWrapper = styled.div`
   }
 `;
 
-export const ContactDetails = styled.div`
+export const ContactDetails = styled.address`
+  font-style: normal;
   margin-top: 38px;
   @media ${DEVICES.tablet} {
     margin-top: 0;
