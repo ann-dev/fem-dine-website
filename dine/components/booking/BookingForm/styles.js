@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+
+import { COLORS } from 'constants/COLORS';
 import { DEVICES } from 'constants/DEVICES';
 
 export const FormContainer = styled.div`
@@ -48,6 +50,7 @@ export const Form = styled.form`
   text-align: center;
   top: -130px;
   width: 327px;
+  z-index: 2;
   @media ${DEVICES.tablet} {
     left: 0;
     padding: 48px;
@@ -84,14 +87,24 @@ export const FormInputRow = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 73px) 88px;
   grid-column-gap: 14px;
+  position: relative;
+  @media ${DEVICES.tablet} {
+    grid-template-columns: repeat(2, 80px) 97px;
+  }
+`;
+
+export const InputRowError = styled.span`
+  position: absolute;
 `;
 
 export const InputWrapper = styled.div`
-  border-bottom: 1px solid black;
+  border-bottom: ${(props) =>
+    props.error ? `1px solid ${COLORS.error}` : '1px solid black'};
   height: auto;
   margin-bottom: 32px;
+  position: relative;
   @media ${DEVICES.tablet} {
-    margin-bottom: 30px;
+    margin-bottom: 36px;
   }
 `;
 
@@ -101,57 +114,29 @@ export const FormInput = styled.input`
   -moz-appearance: textfield;
   border: none;
   border-radius: 0;
+  color: ${(props) => (props.error ? COLORS.error : 'inherit')};
   font-family: inherit;
   font-size: 18px;
   height: 45px;
   letter-spacing: -0.22px;
   outline: none;
   padding-bottom: 16px;
-  padding-left: 18px;
+  padding-left: 16px;
   width: 100%;
-`;
-
-export const FormSelect = styled.div`
-  border-bottom: 1px solid black;
-  height: 46px;
-  padding-bottom: 16px;
-  padding-left: 18px;
-  position: relative;
-  &::after {
-    content: url(/icons/icon-arrow.svg);
-    height: 8px;
-    left: 60px;
-    position: absolute;
-    width: 16px;
+  &::placeholder {
+    color: ${(props) => (props.error ? COLORS.error : '	rgba(17, 17, 17, .5)')};
   }
-  select {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 18px;
-    outline: none;
+    margin: 0;
   }
 `;
 
-export const GuestCounter = styled.div`
-  border-bottom: 1px solid black;
-  display: flex;
-  justify-content: space-around;
-  font-weight: 700;
-  margin-bottom: 32px;
-  padding-bottom: 18px;
-  @media ${DEVICES.tablet} {
-    justify-content: space-between;
-    padding: 25px 20px;
-  }
-`;
-
-export const CounterButton = styled.button`
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 10px !important;
+export const InputError = styled.span`
+  color: ${COLORS.error};
+  font-size: 10px;
+  left: 18px;
+  position: absolute;
+  top: 54px;
 `;
