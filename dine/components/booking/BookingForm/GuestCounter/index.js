@@ -6,11 +6,22 @@ const GuestCounter = () => {
 
   return (
     <Counter>
-      <CounterButton onClick={() => setCount(count - 1)}>
+      <CounterButton
+        disabled={count < 2}
+        onClick={(e) => {
+          e.preventDefault();
+          setCount(count - 1);
+        }}
+      >
         <img src="/icons/icon-minus.svg" alt="" role="presentation" />
       </CounterButton>
       <span>{count > 1 ? `${count} people` : '1 person'}</span>
-      <CounterButton onClick={() => setCount(count + 1)}>
+      <CounterButton
+        onClick={(e) => {
+          e.preventDefault();
+          setCount(count + 1);
+        }}
+      >
         <img src="/icons/icon-plus.svg" alt="" role="presentation" />
       </CounterButton>
     </Counter>

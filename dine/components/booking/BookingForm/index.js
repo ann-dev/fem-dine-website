@@ -1,8 +1,8 @@
 import { useForm } from 'react-hook-form';
-import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 
 import FormSelect from './FormSelect';
-import { Button } from 'components/common/Button';
+import { SubmitButton } from 'components/common/Button';
 
 import {
   FormContainer,
@@ -15,7 +15,7 @@ import {
   InputError,
   FormRowWrapper,
   InputLabel,
-  InputWrapper
+  InputWrapper,
 } from './styles';
 import GuestCounter from './GuestCounter';
 
@@ -26,8 +26,18 @@ const BookingForm = () => {
     formState: { errors }
   } = useForm();
 
-  const onSubmit = (formData) => {
-    alert(JSON.stringify(formData));
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const maxYear = currentYear + 1;
+
+  const onSubmit = () => {
+    Swal.fire({
+      title: 'Success!',
+      text:
+        'Your booking has been confirmed. Check your email for more details.',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    });
   };
 
   return (
@@ -72,76 +82,97 @@ const BookingForm = () => {
           {errors.email && errors.email?.type === 'required' && (
             <InputError>This field is required</InputError>
           )}
-          {errors.email && errors.email.type === 'pattern' && (
-            <InputError className="text-error">
-              Enter a valid email address
-            </InputError>
+          {errors.email && errors.email?.type === 'pattern' && (
+            <InputError>Enter a valid email address</InputError>
           )}
         </InputWrapper>
         <FormRowWrapper>
-          <InputLabel>Pick a date</InputLabel>
-          {errors.email && errors.email.type === 'pattern' && (
-            <InputRowError className="text-error">
-              Enter a valid email address
-            </InputRowError>
-          )}
+          <InputLabel error={errors.month || errors.day || errors.year}>
+            Pick a date
+          </InputLabel>
           <FormInputRow>
-            <InputWrapper>
+            <InputWrapper error={errors.month}>
               <FormInput
                 {...register('month', {
+                  required: true,
                   min: 1,
                   max: 12
                 })}
                 type="number"
                 name="month"
                 placeholder="MM"
+                error={errors.month}
               />
             </InputWrapper>
-            <InputWrapper>
+            <InputWrapper error={errors.day}>
               <FormInput
                 {...register('day', {
+                  required: true,
                   min: 1,
                   max: 31
                 })}
                 type="number"
                 name="day"
                 placeholder="DD"
+                error={errors.day}
               />
             </InputWrapper>
-            <InputWrapper>
+            <InputWrapper error={errors.year}>
               <FormInput
-                {...register('year')}
+                {...register('year', {
+                  required: true,
+                  min: { currentYear },
+                  max: { maxYear }
+                })}
                 type="number"
                 name="year"
                 placeholder="YYYY"
+                error={errors.year}
               />
             </InputWrapper>
+            {((errors.month && errors.month?.type === 'required') ||
+              (errors.day && errors.day?.type === 'required') ||
+              (errors.year && errors.year?.type === 'required')) && (
+              <InputRowError>This field is incomplete</InputRowError>
+            )}
           </FormInputRow>
         </FormRowWrapper>
         <FormRowWrapper>
-          <InputLabel>Pick a time</InputLabel>
+          <InputLabel error={errors.hour || errors.minutes}>
+            Pick a time
+          </InputLabel>
           <FormInputRow>
-            <InputWrapper>
+            <InputWrapper error={errors.hour}>
               <FormInput
-                {...register('hour')}
+                {...register('hour', {
+                  required: true
+                })}
                 type="number"
                 name="hour"
                 placeholder="09"
+                error={errors.hour}
               />
             </InputWrapper>
-            <InputWrapper>
+            <InputWrapper error={errors.minutes}>
               <FormInput
-                {...register('minutes')}
+                {...register('minutes', {
+                  required: true
+                })}
                 type="number"
                 name="minutes"
                 placeholder="00"
+                error={errors.minutes}
               />
             </InputWrapper>
             <FormSelect />
+            {((errors.month && errors.hour?.type === 'required') ||
+              (errors.day && errors.minutes?.type === 'required')) && (
+              <InputRowError>This field is incomplete</InputRowError>
+            )}
           </FormInputRow>
         </FormRowWrapper>
         <GuestCounter />
-        <Button type="submit">Make reservation</Button>
+        <SubmitButton type="submit" value="Make reservation" />
       </Form>
     </FormContainer>
   );

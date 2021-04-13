@@ -76,6 +76,7 @@ export const FormRowWrapper = styled.div`
 `;
 
 export const InputLabel = styled.span`
+  color: ${(props) => (props.error ? COLORS.error : 'inherit')};
   display: block;
   margin-bottom: 12px;
   @media ${DEVICES.tablet} {
@@ -91,10 +92,6 @@ export const FormInputRow = styled.div`
   @media ${DEVICES.tablet} {
     grid-template-columns: repeat(2, 80px) 97px;
   }
-`;
-
-export const InputRowError = styled.span`
-  position: absolute;
 `;
 
 export const InputWrapper = styled.div`
@@ -114,6 +111,7 @@ export const FormInput = styled.input`
   -moz-appearance: textfield;
   border: none;
   border-radius: 0;
+  caret-color: ${COLORS.beaver};
   color: ${(props) => (props.error ? COLORS.error : 'inherit')};
   font-family: inherit;
   font-size: 18px;
@@ -124,7 +122,8 @@ export const FormInput = styled.input`
   padding-left: 16px;
   width: 100%;
   &::placeholder {
-    color: ${(props) => (props.error ? COLORS.error : '	rgba(17, 17, 17, .5)')};
+    color: ${(props) =>
+      props.error ? 'hsla(0, 43%, 50%, .3)' : '	rgba(17, 17, 17, .5)'};
   }
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -136,7 +135,17 @@ export const FormInput = styled.input`
 export const InputError = styled.span`
   color: ${COLORS.error};
   font-size: 10px;
-  left: 18px;
+  left: 16px;
   position: absolute;
   top: 54px;
+`;
+
+export const InputRowError = styled(InputError)`
+  left: -159px;
+  position: absolute;
+  top: 38px;
+  visibility: hidden;
+  @media ${DEVICES.tablet} {
+    visibility: visible;
+  }
 `;

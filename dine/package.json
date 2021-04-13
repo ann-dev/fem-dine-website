@@ -18,7 +18,7 @@
     "react-dom": "17.0.1",
     "react-hook-form": "^7.0.4",
     "styled-components": "^5.2.1",
-    "sweetalert": "^2.1.2"
+    "sweetalert2": "^10.16.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^10.1.3",
